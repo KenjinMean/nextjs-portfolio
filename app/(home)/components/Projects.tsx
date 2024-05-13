@@ -21,7 +21,7 @@ export default function Projects() {
       tech: [SiJavascript, SiReact, SiReactquery, SiReactrouter, SiTailwindcss],
       link: "https://job-finder.cloud",
       code: "https://github.com/KenjinMean/job-finder-react-frontend",
-      cover: "/assets/images/home.PNG",
+      cover: "./assets/images/home.PNG",
       background: "bg-indigo-500",
     },
     {
@@ -29,7 +29,7 @@ export default function Projects() {
       tech: [SiPhp, SiLaravel, SiMysql],
       link: "https://documenter.getpostman.com/view/28237666/2sA3JM71e7#intro",
       code: "https://github.com/KenjinMean/job-finder-laravel-api",
-      cover: "/assets/images/jobFinderApiDocs.PNG",
+      cover: "./assets/images/jobFinderApiDocs.PNG",
       background: "bg-green-500",
     },
   ];
