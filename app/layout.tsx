@@ -6,44 +6,44 @@ import { ThemeProvider } from "@/components/theme-provider";
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	metadataBase: new URL("http://localhost:3000"),
+  metadataBase: new URL("https://kenjinmean.github.io/nextjs-portfolio/"),
 
-	title: "chensokheng",
-	authors: {
-		name: "chensokheng",
-	},
+  title: "Jin",
+  authors: {
+    name: "Jin",
+  },
 
-	description:
-		"Based in Cambodia, I'm a Fullstack developer passionate about building a modern web application that users love.",
-	openGraph: {
-		title: "Chensokheng",
-		description:
-			"Based in Cambodia, I'm a Fullstack developer passionate about building a modern web application that users love.",
-		url: "http://localhost:3000",
-		siteName: "chensokheng",
-		images: "/og.png",
-		type: "website",
-	},
-	keywords: ["daily web coding", "chensokheng", "dailywebcoding"],
+  description:
+    "a Fullstack Developer. Passionate about building modern web applications that users love, I'm dedicated to creating high-quality solutions that make a meaningful impact. Let's build something amazing together!",
+  openGraph: {
+    title: "Jin",
+    description:
+      "a Fullstack Developer. Passionate about building modern web applications that users love, I'm dedicated to creating high-quality solutions that make a meaningful impact. Let's build something amazing together!",
+    url: "https://kenjinmean.github.io/nextjs-portfolio/",
+    siteName: "Jin",
+    images: "/og.png",
+    type: "website",
+  },
+  keywords: ["Jin"],
 };
 
 export default function RootLayout({
-	children,
+  children,
 }: Readonly<{
-	children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-	return (
-		<html lang="en" suppressHydrationWarning>
-			<body className={spaceGrotesk.className}>
-				<ThemeProvider
-					attribute="class"
-					defaultTheme="dark"
-					enableSystem
-					disableTransitionOnChange
-				>
-					{children}
-				</ThemeProvider>
-			</body>
-		</html>
-	);
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <body className={spaceGrotesk.className}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
+      </body>
+    </html>
+  );
 }

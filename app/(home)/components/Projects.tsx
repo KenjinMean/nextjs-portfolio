@@ -47,7 +47,7 @@ export default function Projects() {
               <div className={cn("p-5 rounded-md", project.background)}>
                 <DirectionAwareHover
                   imageUrl={project.cover}
-                  className="w-full space-y-5 cursor-pointer"
+                  className="w-full space-y-5"
                 >
                   <div className=" space-y-5">
                     <h1 className="text-2xl font-bold">{project.title}</h1>
@@ -57,8 +57,18 @@ export default function Projects() {
                       })}
                     </div>
                     <div className="flex flex-col">
-                      <Link href={project.link}>Open Project</Link>
-                      <Link href={project.code}>Open Code</Link>
+                      <Link
+                        className="hover:underline w-fit"
+                        href={project.link}
+                      >
+                        Open Project
+                      </Link>
+                      <Link
+                        className="hover:underline w-fit"
+                        href={project.code}
+                      >
+                        Open Code
+                      </Link>
                     </div>
                   </div>
                 </DirectionAwareHover>
