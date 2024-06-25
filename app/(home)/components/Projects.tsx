@@ -19,7 +19,7 @@ export default function Projects() {
     {
       title: "Job Finder React Frontend",
       tech: [SiJavascript, SiReact, SiReactquery, SiReactrouter, SiTailwindcss],
-      link: "https://job-finder.cloud",
+      link: "https://kenjin.space",
       code: "https://github.com/KenjinMean/job-finder-react-frontend",
       cover: "./assets/images/home.PNG",
       background: "bg-indigo-500",
